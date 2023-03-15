@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* :root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(240, 5%, 4%);
+} */
+
+body {
+  font-family: "Overpass", sans-serif;
+  /* background: rgb(32, 1, 34); */
+  background-image: url(images/todolist\ img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient( 90deg, rgba(32, 1, 34, 1) 55%, rgba(43, 0, 111, 1) 100%); */
+  color: #000;
+}
+
+.container {
+  /* border: 1px solid #000; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  /* text-align: center; */
+  flex-direction: column;
+  background-color: rgb(32, 1, 34);
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 4rem;
+  color: black;
+  opacity: 1;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.user-input {
+  /* border: 1px solid #000; */
+  width: 450px;
+  text-align: center;
+}
+
+.user-input input {
+  width: 80%;
+  height: auto;
+  outline: none;
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-input input:focus {
+  box-shadow: 0 0 5px rebeccapurple;
+  border: 1px solid rebeccapurple;
+}
+
+.user-input button {
+  cursor: pointer;
+  padding: 12px;
+  width: fit-content;
+  transition: 1s;
+  outline: none;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.user-input button:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.to-do-item {
+  width: 500px;
+  margin: auto;
+}
+
+.item {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: 0 0 5px rebeccapurple;
+  border: 1px solid rebeccapurple;
+}
+
+.item i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.item-container {
+  width: 70%;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .user-input {
+    /* border: 1px solid #000; */
+    width: 300px;
+    text-align: center;
+  }
+  .user-input input {
+    width: 80%;
+  }
+  .item {
+    width: 100%;
+  }
+  .item-container {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  /* .user-input {
+      /* border: 1px solid #000; */
+  /* width: 300px;
+      text-align: center;
+    }
+    */
+  .user-input input {
+    width: 80%;
+  }
+  .item {
+    width: 100%;
+  }
+  .item-container {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
