@@ -35,8 +35,12 @@ function addItem() {
 
   toDoItems.appendChild(divParent);
 
-  input.value = "";
-  if (input.value === "") {
-    return "input an item";
+  //   input.value = "";
+  let inputData;
+  inputData = document.getElementById("input").value;
+  if (inputData == "") {
+    alert("please enter the task");
+  } else {
+    document.getElementById("input").value = "";
   }
 }
