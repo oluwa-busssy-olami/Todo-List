@@ -15,14 +15,13 @@
     <div class="container">
       <h1>Todo-list</h1>
       <div class="user-input">
-        <input id="input" type="text" />
-        <button onclick="addItem()"><i class="fa-solid fa-plus"></i></button>
+        <input id="input" type="text" placeholder="write your task here...." />
+        <button onclick="addItem()" id="addButton">
+          <i class="fa-solid fa-plus"></i>
+        </button>
       </div>
       <div class="item-container">
-        <div class="to-do-items">
-          <!-- todoItems should be here -->
-          <!-- remove and mark icons -->
-        </div>
+        <div class="to-do-items"></div>
       </div>
     </div>
 

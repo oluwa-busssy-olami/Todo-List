@@ -44,7 +44,34 @@ h1 {
   color: black;
   opacity: 1;
   margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px 60px;
+  border-radius: 5px;
+  letter-spacing: 2px;
   font-weight: 700;
+  background-color: #fff;
+  animation: colorchange 5s infinite alternate;
+}
+
+@keyframes colorchange {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: black;
+  }
 }
 
 .user-input {

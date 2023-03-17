@@ -1,9 +1,18 @@
 const toDoItems = document.getElementsByClassName("to-do-items")[0];
-const input = document.getElementById("input");
-const removeIcon = document.getElementById("remove");
 
-input.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") addItem();
+const removeIcon = document.getElementById("remove");
+const buttonAdd = document.getElementById("addButton");
+const input = document.getElementById("input").value;
+
+let inputData = document.getElementById("input").value;
+if (inputData == "") {
+  alert("please enter the task");
+} else {
+  document.getElementById("input").value = "";
+}
+
+input.addEventListener("submit", function (event) {
+  if (event.key === "") addItem();
 });
 
 function addItem() {
@@ -35,12 +44,5 @@ function addItem() {
 
   toDoItems.appendChild(divParent);
 
-  //   input.value = "";
-  let inputData;
-  inputData = document.getElementById("input").value;
-  if (inputData == "") {
-    alert("please enter the task");
-  } else {
-    document.getElementById("input").value = "";
-  }
+  input.value = "";
 }
