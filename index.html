@@ -14,12 +14,16 @@
   <body>
     <div class="container">
       <h1>Todo-list</h1>
-      <div class="user-input">
-        <input id="input" type="text" placeholder="write your task here...." />
-        <button onclick="addItem()" id="addButton" type="submit">
+      <form>
+        <input
+          id="input"
+          type="text"
+          placeholder="write your task here...."
+          required />
+        <button onclick="addItem()" type="submit">
           <i class="fa-solid fa-plus"></i>
         </button>
-      </div>
+      </form>
       <div class="item-container">
         <div class="to-do-items"></div>
       </div>
