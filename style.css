@@ -43,7 +43,7 @@ h1 {
   font-size: 4rem;
   color: black;
   opacity: 1;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 30px;
   padding: 20px 60px;
   border-radius: 5px;
@@ -164,15 +164,15 @@ h1 {
     width: 90%;
     margin-top: 20px;
   }
+  h1 {
+    font-size: 2rem;
+    padding: 10px 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 1400px) {
-  /* .user-input {
-      /* border: 1px solid #000; */
-  /* width: 300px;
-      text-align: center;
-    }
-    */
   .user-input input {
     width: 80%;
   }
