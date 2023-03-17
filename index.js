@@ -1,18 +1,10 @@
 const toDoItems = document.getElementsByClassName("to-do-items")[0];
+let firstInput = document.getElementById("input");
+// const removeIcon = document.getElementById("remove");
 
-const removeIcon = document.getElementById("remove");
-const buttonAdd = document.getElementById("addButton");
-const input = document.getElementById("input").value;
-
-let inputData = document.getElementById("input").value;
-if (inputData == "") {
-  alert("please enter the task");
-} else {
-  document.getElementById("input").value = "";
-}
-
-input.addEventListener("submit", function (event) {
-  if (event.key === "") addItem();
+input.addEventListener("submit", (e) => {
+  e.preventDefault();
+  addItem();
 });
 
 function addItem() {
@@ -29,7 +21,7 @@ function addItem() {
   checkIcon.addEventListener("click", function () {
     checkIcon.style.color = "limegreen";
   });
-
+  //Add the icon
   divChild.appendChild(checkIcon);
 
   removeIcon.className = "fa-solid fa-trash";
