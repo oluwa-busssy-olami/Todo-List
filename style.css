@@ -158,12 +158,12 @@ form button:hover {
   .container {
     background-color: #000;
   }
-  .user-input {
+  form {
     /* border: 1px solid #000; */
     width: 300px;
     text-align: center;
   }
-  .user-input input {
+  form input {
     width: 80%;
   }
   .item {
